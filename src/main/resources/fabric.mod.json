@@ -1,0 +1,29 @@
+{
+	"schemaVersion": 1,
+	"id": "camera_mode",
+	"version": "${version}",
+	"name": "CameraMode",
+	"description": "Allows players to enter spectator mode without being able to abuse it",
+	"authors": [
+		"Ashley"
+	],
+	"contact": {
+		"sources": ""
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/camera_mode/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"init": [
+          "backslashashley.camera_mode.CameraMode"
+		]
+	},
+	"mixins": [
+    "camera_mode.mixins.json"
+	],
+  "depends": {
+    "fabricloader": ">=0.14.21",
+    "minecraft": "1.12.2",
+    "osl-entrypoints": ">=0.4.0"
+  }
+}
